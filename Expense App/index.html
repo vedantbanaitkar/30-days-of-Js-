@@ -8,16 +8,31 @@
 </head>
 <body class="bg-black flex justify-center items-center">
     <section class=" w-[450px]  mt-20 border-violet-600 rounded-3xl p-8 text-violet-600 border-2"> 
-        <div class=" bg-red-400">
-            <h1 class="text-4xl">₹455 <span class="text-2xl">Main Balance</span></h1>
-            <div class="w-[100%] flex justify-around border-2 border-violet-600 rounded-xl mt-4">
+        <div class=" bg-black">
+            <h1 class="text-4xl"> <span id="mbal">₹0</span> <span class="text-2xl">Main Balance</span></h1>
+            <div class="w-[100%] flex justify-around border-2 border-violet-600 rounded-xl mt-4 pb-4">
                 <div class="w-[25%]">
-                    <h1 class="text-center p-3">Income</h1>
-                    <p class="text-center p-2 border-2 border-violet-600 rounded-lg">₹4550</p>
+                    <h1 class="text-center text-xl p-3">Income</h1>
+                    <p class="text-center min-w-6 p-2 text-xl border-2 border-violet-600 rounded-lg" >₹<span id="income">0</span></p>
                 </div>
                 <div class="w-[25%]">
-                    <h1 class="text-center p-3">Expense</h1>
-                    <p class="text-center p-2 border-2 border-violet-600 rounded-lg">₹455</p>
+                    <h1 class="text-center text-xl p-3">Expense</h1>
+                    <p class="text-center min-w-6 p-2 text-xl border-2 border-violet-600 rounded-lg" >₹<span id="expense">0</span></p>
+                </div>
+            </div>
+            <form id="form">
+                <input class="text-xl px-4 w-full bg-black border-b-2 border-violet-600 rounded-lg focus:border-violet-300 mt-5" type="number" placeholder="Amount" id="amount" required>
+                <input class="text-xl px-4 w-full bg-black border-b-2 border-violet-600 rounded-lg focus:border-violet-300 mt-5" type="text" placeholder="Details" id="details" required>
+                <div class="text-center">
+                    <button onclick="clickHandler1()" class="border-2 text-red-400 border-violet-600 rounded-xl w-[48%] text-2xl mt-2 py-2 mr-2">Expense</button>
+                    <button onclick="clickHandler2()" class="border-2 text-green-300 border-violet-600 rounded-xl w-[48%] text-2xl mt-2 py-2">Income</button>
+                </div>
+            </form>
+            <hr class="border-violet-500 my-8 border-2">
+            <div>
+                <h1 class="text-3xl ">Transactions</h1>
+                <div id="transactions" class=" flex flex-col items-center mt-6 gap-y-2">
+                    
                 </div>
             </div>
         </div>

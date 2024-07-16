@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="main font-sans flex justify-center p-24">
+        <div class="box bg-cyan-300 w-[450px] text-center p-16 ">
+             <h1 class="font-bold text-4xl mb-[60px]">Dice Game</h1>
+            <div class="flex-div flex justify-center items-center">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-2xl">Player 1</h1>
+                    <img id="p1img" class="w-[45%] m-auto" src="images/dice1.png" alt="">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-2xl">Player 2</h1>
+                    <img id="p2img" class="w-[45%] m-auto" src="images/dice2.png" alt="">
+                </div>
+            </div>
+            <button onclick="clickHandler()" class="text-2xl w-[50%] bg-gray-700 text-white mt-14 border-none py-3 rounded-md hover:scale-105 hover:bg-gray-500">ROLL</button>
+            <h1 id="message" class="mt-10 text-xl font-semibold"></h1>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
