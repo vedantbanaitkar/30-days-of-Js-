@@ -6,13 +6,22 @@
     <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .image{
+            display: none;
+        }
+        .loading{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <section class="main flex justify-center mt-[50px] max-w-[450px] rounded-md w-[90%] mx-auto text-center p-5 bg-red-400">
-        <div class="card  ">
+        <div class="card  w-[90%]">
             <h1 class="my-4 font-bold text-4xl">Meme Generator</h1>
             <h2 class="my-2 font-semibold text-base">A Place to generate Memes</h2>
-            <button class="btn my-3 p-2 w-[100%] bg-slate-500 rounded-md text-slate-300 hover:scale-105 hover:font-semibold">Generate</button>
+            <button class="btn my-3 p-2 w-[90%] bg-slate-500 rounded-md text-slate-300 hover:scale-105 hover:font-semibold">Generate</button>
+            <h2 class="my-2 font-semibold text-base loading">Loading...</h2>
             <img class="bg-black image w-[100%]" src="https://i.redd.it/6ektnywq4vcd1.png" alt="asdfasd">
         </div>
     </section>
