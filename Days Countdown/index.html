@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Countdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .main{
+            background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+        }
+    </style>
+</head>
+<body>
+    <section class="main w-[100vw] text-white h-[100vh] bg-slate-400 flex justify-center items-center">
+        <div class="countdown flex flex-col justify-center items-center m-auto gap-12">
+            <h1 class="font-bold text-4xl"><span id="days">170</span> days left</h1>
+            <p id="quote">"Nothing is Impossible"</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
