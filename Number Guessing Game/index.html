@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="main h-[100vh] w-[100vw] bg-slate-500 flex justify-center items-center">
+      <div class="p-8 border-2 border-black rounded-lg text-center bg-slate-400 h-[175px] w-[400px]">
+        <h1 class="text-xl font-bold m-3 text-black">Guess The Number</h1>
+        <div class="numbersDiv m-4 flex justify-between">
+          <button id="btn1" class="number-button  hover:border hover:border-white px-4 py-2">1</button>
+          <button id="btn2" class="number-button  hover:border hover:border-white px-4 py-2">2</button>
+          <button id="btn3" class="number-button  hover:border hover:border-white px-4 py-2">3</button>
+          <button id="btn4" class="number-button  hover:border hover:border-white px-4 py-2">4</button>
+          <button id="btn5" class="number-button  hover:border hover:border-white px-4 py-2">5</button>
+          <button id="btn6" class="number-button  hover:border hover:border-white px-4 py-2">6</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html
