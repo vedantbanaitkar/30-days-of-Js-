@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="main bg-slate-800 w-[100vw] h-[100vh] flex justify-center items-center">
+        <div class="card h-[400px] w-[350px] bg-red-500 rounded-lg p-5 py-12 flex flex-col justify-between items-center">
+            <div class="flex justify-center items-center gap-16">
+                <img class="playerImage hover:border hover:border-white rounded-lg transition duration-300 ease-in-out h-[100px]" src="images/1.png" alt="">
+                <img class="compImage hover:border hover:border-white rounded-lg transition duration-300 ease-in-out h-[100px] scale-x-[-1]" src="images/1.png" alt="">
+            </div>
+            <h1 class="select font-semibold text-3xl">
+                Select An Option
+            </h1>
+            <h2 class="line font-semibold text-3xl hidden">
+                You Won
+            </h2>
+            <div class="flex gap-10 w-full">
+                <img class="image hover:border hover:border-white rounded-lg transition duration-300 ease-in-out h-[80px] rotate-90 scale-x-[-1] " src="images/1.png" alt="">
+                <img class="image hover:border hover:border-white rounded-lg transition duration-300 ease-in-out h-[80px] rotate-90 scale-x-[-1] " src="images/2.png" alt="">
+                <img class="image hover:border hover:border-white rounded-lg transition duration-300 ease-in-out h-[80px] rotate-90 scale-x-[-1] " src="images/3.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
