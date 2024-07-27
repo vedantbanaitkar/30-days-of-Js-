@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+<body>
+    <section class="main w-[100vw] h-[100vh] flex justify-center items-center bg-slate-200">
+        <div class="card bg-blue-300 px-10 py-10 rounded-lg">
+            <form onsubmit="submitHandler(event)">
+                <input class="cityInput rounded-sm outline-offset-0 px-3 py-1" type="text" placeholder="Enter City Name">
+                <button class=" bg-blue-400 px-3 py-1 rounded-sm hover:bg-blue-300 hover:outline hover:outline-white transition duration-300 ease-in-out" type="submit" >Submit</button>
+                <div class="weatherCard flex flex-col justify-center items-center">
+                    <h3 class="mt-10 my-4 font-semibold text-4xl" id="cityName">City Name</h3>
+                    <h1 class="my-3 font-normal text-4xl" id="temperature">40 C</h1>
+                    <div class="flex gap-8 justify-evenly my-4">
+                        <h4 class="" id="humidity">30%</h4>
+                        <h4 class="" id="wind">20 Km</h4>
+                    </div>
+                    <img class="" id="weatherIcon" src="" alt="weatherImage">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
